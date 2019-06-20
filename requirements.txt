@@ -1,0 +1,6 @@
+pandas
+numpy
+plotly
+simpy
+openclsim
+jupyter
