@@ -15,8 +15,14 @@ If you wish to use the notebooks on your local drive, use the following code to 
 git clone https://github.com/TUDelft-CITG/OpenCLSim-Notebooks
 
 # Go to the correct folder
-cd Hydraulic-Infrastructure-Realisation
+cd OpenCLSim-Notebooks
 
 # Install package
-pip install -e .
+pip pip install -r requirements.txt
+
+# Go to the notebooks foldeer
+cd notebooks
+
+# Start jupyter notebooks
+jupyter notebook
 ```
