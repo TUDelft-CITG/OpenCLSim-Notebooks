@@ -22,7 +22,7 @@ git clone https://github.com/TUDelft-CITG/OpenCLSim-Notebooks
 cd OpenCLSim-Notebooks
 
 # Install package
-pip pip install -r requirements.txt
+pip install -r requirements.txt
 
 # Go to the notebooks foldeer
 cd notebooks
