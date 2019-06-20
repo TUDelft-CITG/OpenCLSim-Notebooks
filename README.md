@@ -8,6 +8,8 @@ The package documentation can be found [here](openclsim.readthedocs.io).
 
 The benefit of OpenCLSim is the generic set-up. This set-up allows the creation of complex logistical flows. A number of examples are presented in the [notebooks folder](https://github.com/TUDelft-CITG/OpenCLSim-Notebooks/tree/master/notebooks). You can run them locally or as an [Azure notebook](https://notebooks.azure.com/joris-denuijl/projects/openclsim/).
 
+#### Using the notebooks locally
+
 If you wish to use the notebooks on your local drive, use the following code to get started.
 
 ``` bash
@@ -26,3 +28,12 @@ cd notebooks
 # Start jupyter notebooks
 jupyter notebook
 ```
+
+#### Using Azure Notebooks
+
+If you wish to run the notebooks using Microsoft Azure, use the following set-up to get started.
+
+1. Create a Microsoft [account](https://docs.microsoft.com/nl-nl/azure/notebooks/quickstart-sign-in-azure-notebooks).
+2. Go to the following [Azure Notebooks website](https://notebooks.azure.com/joris-denuijl/projects/OpenCLSim).
+3. Clone the project, see [information](https://docs.microsoft.com/nl-nl/azure/notebooks/create-clone-jupyter-notebooks#clone-a-project) on cloning by Microsoft.
+4. Run the notebooks.
