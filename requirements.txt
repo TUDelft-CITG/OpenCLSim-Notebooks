@@ -2,5 +2,7 @@ pandas
 numpy
 plotly
 simpy
-openclsim
-jupyter
+networkx>=2.3
+shapely
+simplekml
+openclsim==0.3.1b0
