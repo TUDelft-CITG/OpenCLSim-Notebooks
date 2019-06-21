@@ -38,4 +38,5 @@ If you wish to run the notebooks using Microsoft Azure, use the following set-up
 1. Create a Microsoft [account](https://docs.microsoft.com/nl-nl/azure/notebooks/quickstart-sign-in-azure-notebooks).
 2. Go to the following [Azure Notebooks website](https://notebooks.azure.com/joris-denuijl/projects/OpenCLSim).
 3. Clone the project, see [information](https://docs.microsoft.com/nl-nl/azure/notebooks/create-clone-jupyter-notebooks#clone-a-project) on cloning by Microsoft.
-4. Run the notebooks.
+4. Start the notebook server.
+5. Wait a short while before you run any of the notebooks, the environment takes some time to initialize with the additional packages (such as OpenCLSim and SimPy).
