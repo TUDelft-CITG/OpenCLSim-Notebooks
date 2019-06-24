@@ -1,0 +1,6 @@
+EventID,EventName
+e19a92d8-9647-11e9-b400-b469212bff5b,loading
+e19b082c-9647-11e9-8f73-b469212bff5b,sailing filled
+e19b56d4-9647-11e9-9ac3-b469212bff5b,unloading
+e19b7de4-9647-11e9-93e9-b469212bff5b,sailing empty
+f7cf9634-9647-11e9-861b-b469212bff5b,waiting for spill
