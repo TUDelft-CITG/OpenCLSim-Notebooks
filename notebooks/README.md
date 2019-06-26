@@ -11,7 +11,10 @@ The benefit of OpenCLSim is the generic set-up. This set-up allows the creation 
 7. **Temporary site** - Example of a project site that is used as temporary storage. It is filled and emptied after a short while, the simulation should continue until the final project rule is satisfied.
 8. **Vessel on dynamic route** - Example of a vessel using dynamic routing from the [HALEM](https://pypi.org/project/halem/) python package.
 
-The output is visualized in the notebooks, but the output is also saved to external csv files. These csv files can be loaded into other visualisation tools, including free Business Intelligence tools like Qlik Sense (https://www.qlik.com/us/try-or-buy/download-qlik-sense) and PowerBI (https://powerbi.microsoft.com/en-us/desktop/. For loading the data in Qlik Sense, copy the *.qvs load script into the data load editor. We recommend to add the Qlik extention https://github.com/SimoneSilini/Reboot-Timeline to vizualize planning. 
+### Coupling the notebooks to BI Tools
+
+The output is visualized in the notebooks, but the output is also saved to external csv files. These csv files can be loaded into other visualisation tools, including free Business Intelligence tools like [Qlik Sense](https://www.qlik.com/us/try-or-buy/download-qlik-sense) and [Microsoft PowerBI](https://powerbi.microsoft.com/en-us/desktop/). For loading the data in Qlik Sense, copy the *.qvs* load script into the data load editor. We recommend to add this [Qlik extention](https://github.com/SimoneSilini/Reboot-Timeline) to vizualize planning. 
+
 Installing custom components in Qlik Sense Desktop
 * Open a Windows Explorer window and navigate to ..\Users\<UserName>\Documents\Qlik\Sense\Extensions.
 * Create a new folder and give it a suitable name.
