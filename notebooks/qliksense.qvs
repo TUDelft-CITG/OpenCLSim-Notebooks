@@ -1,0 +1,111 @@
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='£#,##0.00;-£#,##0.00';
+SET TimeFormat='hh:mm:ss';
+SET DateFormat='DD/MM/YYYY';
+SET TimestampFormat='DD/MM/YYYY hh:mm:ss[.fff]';
+SET FirstWeekDay=0;
+SET BrokenWeeks=0;
+SET ReferenceDay=4;
+SET FirstMonthOfYear=1;
+SET CollationLocale='en-GB';
+SET CreateSearchIndexOnReload=1;
+SET MonthNames='Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec';
+SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December';
+SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun';
+SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday';
+SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
+
+Simulations:
+LOAD
+    SimulationID,
+    SimulationName
+FROM [lib://Simulation Results/simulations.csv]
+(txt, codepage is 28591, embedded labels, delimiter is ',', msq);
+
+left join(Simulations)
+LOAD
+    SimulationID,
+    SimulationDuration,
+    SimulationCost
+FROM [lib://Simulation Results/generic_results.csv]
+(txt, codepage is 28591, embedded labels, delimiter is ',', msq);
+
+Activities:
+LOAD
+    ActivityID,
+    ActivityName,
+    EquipmentID,
+    ActivityFunction
+FROM [lib://Simulation Results/activities.csv]
+(txt, codepage is 28591, embedded labels, delimiter is ',', msq);
+
+Equipment:
+LOAD
+    EquipmentID,
+    EquipmentName
+FROM [lib://Simulation Results/equipment.csv]
+(txt, codepage is 28591, embedded labels, delimiter is ',', msq);
+
+Log:
+LOAD
+    ActivityID,
+    SimulationID,
+    ObjectID,
+    EventID,
+    LocationID,
+
+    EventStart,
+    EventStop,
+    EventDuration
+FROM [lib://Simulation Results/equipment_log.csv]
+(txt, codepage is 28591, embedded labels, delimiter is ',', msq);
+
+left join(Log)
+LOAD
+    ActivityID,
+    SimulationID,
+    ObjectID,
+    EventID,
+    LocationID,
+
+    SpillStart,
+    SpillStop,
+    SpillDuration,
+    Spill
+FROM [lib://Simulation Results/dredging_spill.csv]
+(txt, codepage is 28591, embedded labels, delimiter is ',', msq);
+
+left join(Log)
+LOAD
+    ActivityID,
+    SimulationID,
+    ObjectID,
+    EventID,
+    LocationID,
+    
+    EnergyUseStart,
+    EnergyUseStop,
+    EnergyUseDuration,
+    EnergyUse
+FROM [lib://Simulation Results/energy_use.csv]
+(txt, codepage is 28591, embedded labels, delimiter is ',', msq);
+
+Events:
+LOAD
+    EventID,
+    EventName
+FROM [lib://Simulation Results/events.csv]
+(txt, codepage is 28591, embedded labels, delimiter is ',', msq);
+
+Locations:
+LOAD
+    LocationID,
+    LocationName,
+    Longitude,
+    Latitude,
+    GeoMakePoint(Latitude, Longitude) as gps
+FROM [lib://Simulation Results/locations.csv]
+(txt, codepage is 28591, embedded labels, delimiter is ',', msq);
