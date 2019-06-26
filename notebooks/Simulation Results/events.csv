@@ -1,6 +1,6 @@
 EventID,EventName
-e19a92d8-9647-11e9-b400-b469212bff5b,loading
-e19b082c-9647-11e9-8f73-b469212bff5b,sailing filled
-e19b56d4-9647-11e9-9ac3-b469212bff5b,unloading
-e19b7de4-9647-11e9-93e9-b469212bff5b,sailing empty
-f7cf9634-9647-11e9-861b-b469212bff5b,waiting for spill
+bd9683fa-97eb-11e9-a217-b469212bff5b,loading
+bd96dfcc-97eb-11e9-8bcd-b469212bff5b,sailing filled
+bd97208c-97eb-11e9-9e70-b469212bff5b,unloading
+bd979586-97eb-11e9-9c6f-b469212bff5b,sailing empty
+cabdf8ae-97eb-11e9-8bd8-b469212bff5b,waiting for spill
