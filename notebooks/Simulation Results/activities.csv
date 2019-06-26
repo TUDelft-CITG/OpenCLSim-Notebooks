@@ -1,2 +1,4 @@
-ActivityID,ActivityName
-6dbbbdf7-4589-11e9-bf3b-b469212bff5b,Soil movement
+ActivityID,ActivityName,EquipmentID,ActivityFunction
+6dbbbdf7-4589-11e9-bf3b-b469212bff5b,Soil movement,6dbbbdf6-4589-11e9-95a2-b469212bff5b,Loader
+6dbbbdf7-4589-11e9-bf3b-b469212bff5b,Soil movement,6dbbbdf6-4589-11e9-95a2-b469212bff5b,Mover
+6dbbbdf7-4589-11e9-bf3b-b469212bff5b,Soil movement,6dbbbdf6-4589-11e9-95a2-b469212bff5b,Unloader

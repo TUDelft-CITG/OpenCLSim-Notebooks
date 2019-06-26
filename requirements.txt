@@ -5,4 +5,4 @@ simpy
 networkx>=2.3
 shapely
 simplekml
-openclsim==0.3.1rc0
+openclsim==0.3.1rc2
