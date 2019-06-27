@@ -35,7 +35,7 @@ FROM [lib://Simulation Results/generic_results.csv]
 
 Activities:
 LOAD
-    distinct ActivityID,
+    ActivityID,
     ActivityName
 FROM [lib://Simulation Results/activities.csv]
 (txt, codepage is 28591, embedded labels, delimiter is ',', msq);
@@ -45,7 +45,7 @@ LOAD
     ActivityID,
     EquipmentID,
     ActivityFunction
-FROM [lib://Simulation Results/activities.csv]
+FROM [lib://Simulation Results/activityequipmentassignment.csv]
 (txt, codepage is 28591, embedded labels, delimiter is ',', msq);
 
 Equipment:
