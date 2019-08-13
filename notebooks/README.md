@@ -1,6 +1,6 @@
 ## Example notebooks
 
-The benefit of OpenCLSim is the generic set-up. This set-up allows the creation of complex logistical flows. You can run the following examples locally or as an [Azure notebook](https://notebooks.azure.com/home/projects).
+The benefit of OpenCLSim is the generic set-up. This set-up allows the creation of complex logistical flows. You can run the following examples locally or as an [Azure notebook](https://notebooks.azure.com/joris-denuijl/projects/OpenCLSim).
 
 1. **Basic Hopper Operation** - Example of a trailing suction hopper dredge shipping sediment from origin to destination site.
 2. **Energy Use** - Example of estimating fuel use on a project by keeping track of energy useage for each step of the production cycle.
