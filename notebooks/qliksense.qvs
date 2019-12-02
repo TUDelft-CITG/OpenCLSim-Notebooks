@@ -57,6 +57,7 @@ FROM [lib://Simulation Results/equipment.csv]
 
 Log:
 LOAD
+    ActivityID &  SimulationID &  ObjectID &  EventID &  LocationID as key,
     ActivityID,
     SimulationID,
     ObjectID,
@@ -69,14 +70,10 @@ LOAD
 FROM [lib://Simulation Results/equipment_log.csv]
 (txt, codepage is 28591, embedded labels, delimiter is ',', msq);
 
-left join(Log)
+//left join(Log) // too slow
+Log.spill:
 LOAD
-    ActivityID,
-    SimulationID,
-    ObjectID,
-    EventID,
-    LocationID,
-
+    ActivityID &  SimulationID &  ObjectID &  EventID &  LocationID as key,
     SpillStart,
     SpillStop,
     SpillDuration,
@@ -84,14 +81,10 @@ LOAD
 FROM [lib://Simulation Results/dredging_spill.csv]
 (txt, codepage is 28591, embedded labels, delimiter is ',', msq);
 
-left join(Log)
+//left join(Log) // too slow
+Log.energy:
 LOAD
-    ActivityID,
-    SimulationID,
-    ObjectID,
-    EventID,
-    LocationID,
-    
+    ActivityID &  SimulationID &  ObjectID &  EventID &  LocationID as key,
     EnergyUseStart,
     EnergyUseStop,
     EnergyUseDuration,
@@ -115,3 +108,7 @@ LOAD
     GeoMakePoint(Latitude, Longitude) as gps
 FROM [lib://Simulation Results/locations.csv]
 (txt, codepage is 28591, embedded labels, delimiter is ',', msq);
+
+
+
+
