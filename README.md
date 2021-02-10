@@ -1,6 +1,16 @@
 # OpenCLSim Notebooks
 
-This is the repository with examples for the [OpenCLSim](https://github.com/TUDelft-CITG/OpenCLSim) package. 
+This is the repository with examples for the [OpenCLSim](https://github.com/TUDelft-CITG/OpenCLSim) package.
+
+# Download the OpenCLSim package
+git clone https://github.com/TUDelft-CITG/OpenCLSim
+
+# Go to the correct folder
+cd OpenCLSim-Notebooks
+
+# Install package
+pip install -r requirements.txt
+pip install -e .
 
 The package documentation can be found [here](openclsim.readthedocs.io).
 
@@ -30,13 +40,3 @@ cd notebooks
 # Start jupyter notebooks
 jupyter notebook
 ```
-
-### Using Azure Notebooks
-
-If you wish to run the notebooks using Microsoft Azure, use the following set-up to get started.
-
-1. Create a Microsoft [account](https://docs.microsoft.com/nl-nl/azure/notebooks/quickstart-sign-in-azure-notebooks).
-2. Go to the following [Azure Notebooks website](https://notebooks.azure.com/joris-denuijl/projects/OpenCLSim).
-3. Clone the project, see [information](https://docs.microsoft.com/nl-nl/azure/notebooks/create-clone-jupyter-notebooks#clone-a-project) on cloning by Microsoft.
-4. Start the notebook server.
-5. Wait a short while before you run any of the notebooks, the environment takes some time to initialize with the additional packages (such as OpenCLSim and SimPy).
