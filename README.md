@@ -6,6 +6,7 @@ The first step is to get the OpenCLSim package. You can download and install the
 `git clone https://github.com/TUDelft-CITG/OpenCLSim`
 
 Go to the correct folder
+
 `cd OpenCLSim`
 
 Install package
