@@ -1,13 +1,14 @@
 # OpenCLSim Notebooks
 This is the repository with examples for the [OpenCLSim](https://github.com/TUDelft-CITG/OpenCLSim) package.
 
-# Download and install the OpenCLSim package
+The first step is to get the OpenCLSim package. You can download and install the latest version of the OpenCLSim package using the following steps.
+
 `git clone https://github.com/TUDelft-CITG/OpenCLSim`
 
-## Go to the correct folder
+Go to the correct folder
 `cd OpenCLSim`
 
-## Install package
+Install package
 ```
 pip install -r requirements.txt
 pip install -e .
