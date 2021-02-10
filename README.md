@@ -3,11 +3,15 @@ This is the repository with examples for the [OpenCLSim](https://github.com/TUDe
 
 The first step is to get the OpenCLSim package. You can download and install the latest version of the OpenCLSim package using the following steps.
 
-`git clone https://github.com/TUDelft-CITG/OpenCLSim`
+```
+git clone https://github.com/TUDelft-CITG/OpenCLSim
+```
 
 Go to the correct folder
 
-`cd OpenCLSim`
+```
+cd OpenCLSim
+```
 
 Install package
 ```
